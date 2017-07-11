@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VvN-i0-75w"; */
+"VvN-i0-75w.text" = "Bienvendo";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ilj-60-QoM"; */
+"ilj-60-QoM.normalTitle" = "Cancelar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "s1I-MQ-BZD"; */
+"s1I-MQ-BZD.normalTitle" = "Saludar";

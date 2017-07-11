@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  HelloWorld
+
+  Created by Esteban Rodríguez Alonso on 7/07/17.
+  Copyright © 2017 Esteban Rodríguez Alonso. All rights reserved.
+*/
+"Hello" = "Hello!";

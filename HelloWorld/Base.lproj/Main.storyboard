@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilj-60-QoM" userLabel="btn_cancel">
+                                <rect key="frame" x="309" y="437" width="53" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClearText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IlF-LU-R53"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-lS-s2C" userLabel="txt_name">
+                                <rect key="frame" x="20" y="386" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvN-i0-75w" userLabel="lbl_welcome">
+                                <rect key="frame" x="163.33333333333337" y="104" width="87.666666666666657" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jzo-Ql-gSR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1I-MQ-BZD" userLabel="btn_greet">
+                                <rect key="frame" x="58" y="437" width="42" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Greet">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGreet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HrK-M0-5JI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jC-Kv-5QR" userLabel="btn_info">
+                                <rect key="frame" x="372" y="694" width="22" height="22"/>
+                                <connections>
+                                    <action selector="btnInformation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="et0-8e-2tw"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCJ-SP-rVW" userLabel="lbl_greet_user">
+                                <rect key="frame" x="187.66666666666666" y="313" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="T6e-lS-s2C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DMP-Jg-HAZ"/>
+                            <constraint firstAttribute="bottom" secondItem="1jC-Kv-5QR" secondAttribute="bottom" constant="20" symbolic="YES" id="Egc-ry-wOH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ilj-60-QoM" secondAttribute="trailing" constant="32" id="FGV-eO-VuQ"/>
+                            <constraint firstItem="T6e-lS-s2C" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="FGh-HY-JDe"/>
+                            <constraint firstItem="s1I-MQ-BZD" firstAttribute="top" secondItem="T6e-lS-s2C" secondAttribute="bottom" constant="21" id="JaI-QM-y9n"/>
+                            <constraint firstItem="T6e-lS-s2C" firstAttribute="top" secondItem="PCJ-SP-rVW" secondAttribute="bottom" constant="52" id="Pf0-fB-9Oc"/>
+                            <constraint firstItem="VvN-i0-75w" firstAttribute="centerX" secondItem="PCJ-SP-rVW" secondAttribute="centerX" id="ZQe-Pt-j58"/>
+                            <constraint firstItem="PCJ-SP-rVW" firstAttribute="centerX" secondItem="T6e-lS-s2C" secondAttribute="centerX" id="cM5-40-CRP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s1I-MQ-BZD" secondAttribute="bottom" constant="267" id="gDS-Au-ZDn"/>
+                            <constraint firstItem="s1I-MQ-BZD" firstAttribute="baseline" secondItem="ilj-60-QoM" secondAttribute="baseline" id="huM-ml-dU1"/>
+                            <constraint firstItem="s1I-MQ-BZD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="m6u-0h-bhx"/>
+                            <constraint firstItem="VvN-i0-75w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="84" id="sEC-dH-0Ni"/>
+                            <constraint firstItem="T6e-lS-s2C" firstAttribute="trailing" secondItem="1jC-Kv-5QR" secondAttribute="trailing" id="yum-8m-fLR"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="lblGreetUser" destination="PCJ-SP-rVW" id="66A-YX-csC"/>
+                        <outlet property="lblWelcomeMessage" destination="PCJ-SP-rVW" id="gXc-EC-rj7"/>
+                        <outlet property="txtUserName" destination="T6e-lS-s2C" id="18i-Y7-mJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.799999999999997" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
